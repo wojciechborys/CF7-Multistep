@@ -1,0 +1,99 @@
+<div class="steps" data-step="1">
+  //just remember to put this INSIDE your Contact Forms 7 template.
+  <h3>Title here!</h3>
+  
+  <div class="steps__number">
+    <span class="steps__number--single" data-active>1</span>
+    <span class="steps__number--single">2</span>
+    <span class="steps__number--single">3</span>
+  </div>
+  
+  <p class="mb-4"><strong>What do you need?</strong></p>
+  [checkbox* iwant use_label_element "Lorem" "Ipsum"]
+
+  <div class="steps__buttons-wrapper">
+    <a class="clicker button-1 next">Next</a>
+  </div>
+
+</div>
+
+<div class="steps" data-step="2">
+<h3>Next title here</h3>
+
+<div class="steps__number">
+  <span class="steps__number--single" data-active>1</span>
+  <span class="steps__number--single" data-active>2</span>
+  <span class="steps__number--single">3</span>
+</div>
+<p class="mb-4"><strong>Whad do you do?</strong></p>
+<label>
+   [text company placeholder "Company name" ]
+</label>
+
+<label>
+   [text works placeholder "Industry"] 
+</label>
+
+<label>
+   [text web placeholder "Website (optional)"] 
+</label>
+
+<div class="steps__buttons-wrapper">
+   <a class="clicker button-3 prev">Prev</a>
+   <a class="clicker button-1 next">Next</a>
+</div>
+
+</div>
+
+<div class="steps" data-step="3">
+<h3>Custom Title</h3>
+<div class="steps__number">
+  <span class="steps__number--single" data-active>1</span>
+  <span class="steps__number--single" data-active>2</span>
+  <span class="steps__number--single" data-active>3</span>
+</div>
+<label>
+   [text nameforname placeholder "Name" ]
+</label>
+
+<label>
+   [text email placeholder "Email Address"] 
+</label>
+
+<label>
+   [text tel placeholder "Phone number (optional)"] 
+</label>
+
+<label>
+   [text addinfo placeholder "Add something more!"] 
+</label>
+
+[acceptance acceptance-170] I Accept privacy policy [/acceptance]
+
+<div class="steps__buttons-wrapper">
+  <a class="clicker button-3 prev">Prev</a>
+  [submit class:button-1 "Send"]
+</div>
+
+</div>
+
+<div class="steps" data-step="4">
+//Note - CF7 form adds class mail-ok or mail-invalid, based on validation of the form. Use this in styling. 
+<div class="mail-ok response">
+  <h3>Success</h3>
+  <p>Success</p>
+
+  <div class="steps__buttons-wrapper">
+     <a class="button-1 next">Close</a>
+  </div>
+</div>
+
+  <div class="mail-invalid response">
+  <h3>Invalid data</h3>
+  <p>Custom text</p>
+  <div class="steps__buttons-wrapper">
+     <a class="button-3 prev">Prev</a>
+  </div>
+</div>
+
+</div>
